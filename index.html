@@ -6,8 +6,44 @@
     <title>Gatos Aleatorios</title>
 </head>
 <body>
-    <h1>Gatos Aleatorios</h1>
-    <img  alt="Gatos">
+    <h1>Gatos APP</h1>
+
+    <span id="error"></span>
+    
+    <section id="gatosRamdom">
+        <h2>Gatos Aleatorios</h2>
+    
+      <article>
+        <img  id="img1"  width="150" alt="Gatos Aleatorios">
+        <button id="btn1">Guardar en Favorito</button>
+      </article>
+    
+      <article>
+        <img  id="img2"  width="150" alt="Gatos Aleatorios">
+        <button  id="btn2" >Guardar en Favorito</button>
+      </article>
+      
+      <button onclick="loadRandomCat()">Recargar</button>
+    </section>
+    
+    <section id="uploadingGato">
+      <h2>Subir imagen de gato</h2>
+      <form id="uploadingForm">
+        <input id="file" type="file" name="file">
+        <button type="button" onclick="subirfoto()">Subir Foto</button>
+      </form>
+    </section>
+    <section id="favorito">
+        <h2>Gatos Favoritos</h2>
+    
+      <article>
+        <img id="img1" width="150"  alt="Gatos Aleatorios">
+          <button>Sacar de Favorito</button>
+      </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./main.js"></script>
+    
 </body>
 </html>
+
